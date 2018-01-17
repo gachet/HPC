@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
     <meta charset="utf-8">
     <meta name="description" content="PGE 383 - High Performance Computing syllabus page">
     <meta name="viewport" content="width=device-width">
-    <title>Syllabus | Introduction to High Performance Computing</title>
+    <title>Syllabus | High Performance Computing for Engineers</title>
 
                 <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
             <link href="../assets/css/fullcalendar.min.css" rel="stylesheet" type="text/css">
@@ -30,7 +30,7 @@ article: http://ogp.me/ns/article#
     
 
     
-        <meta property="og:site_name" content="Introduction to High Performance Computing">
+        <meta property="og:site_name" content="High Performance Computing for Engineers">
     <meta property="og:title" content="Syllabus">
     <meta property="og:url" content="/syllabus/index.html">
     <meta property="og:description" content="PGE 383 - High Performance Computing syllabus page">
@@ -57,11 +57,11 @@ article: http://ogp.me/ns/article#
             </button>
             <a class="navbar-brand" href="../">
             <span class="hidden-xs">
-                <img src="../assets/img/cockrell_school_logo_white.svg" alt="Introduction to High Performance Computing" id="logo">
+                <img src="../assets/img/cockrell_school_logo_white.svg" alt="High Performance Computing for Engineers" id="logo">
             </span> <!--class="hidden-xs"-->
             
 
-                <span id="blog-title">Introduction to High Performance Computing</span>
+                <span id="blog-title">High Performance Computing for Engineers</span>
             </a>
         </div>
 <!-- /.navbar-header -->
@@ -71,7 +71,7 @@ article: http://ogp.me/ns/article#
 <a href=".">Syllabus</a>
                 </li>
 <li>
-<a href="../video-lectures/">Video Lectures</a>
+<a href="../course-mat/">Course Materials</a>
 
                 
             </li>
@@ -110,24 +110,97 @@ article: http://ogp.me/ns/article#
 <p><strong>Introduction:</strong></p>
 <p>As engineers we often encounter problems too large or too difficult to solve in a conventional manner; therefore, we resort to using the computer to do the hard work for us. These types of problems include problems in computational mechanics, optimization, and statistical analysis. Sometimes, these problems can become so large that the computational expense overwhelms our desktop workstations and we seek out high-performance computing (HPC) resources or HPC clusters to perform the job. These HPC machines are almost always computers that run a UNIX/Linux style operating system and include different parallelization paradigms such as MPI, OpenMPI, OpenCL, CUDA, etc. This course will introduce the student to the UNIX environment in a scientific computing context and include instruction on several import UNIX applications that will make them more productive users. We will also cover, at an introductory level, the differences between these parallelization styles of computing and develop a basic working understanding of how to utilize the application programming interfaces (APIs) in scientific applications.</p>
 <p><strong>Outline:</strong> Below is a general outline of what I intend to cover in the course.  This is subject to change based on the needs and preparation of the students in the class.  Any updates will be posted as they occur.  </p>
-<p>| Week | Topic | Specifics |
-|------|-------|-----------|
-| Jan. 17 | Introduction to HPC and UNIX | Syllabus, Codecademy, Github, Cloud9 |
-| Jan. 22,24 | Git and Github |  |
-| Jan. 29, 31 | Introduction to UNIX | File system, permissions, regular expressions |
-| Feb. 5,7 | Editors | vi, emacs |
-| Feb. 12,14  | Intermediate UNIX | grep, sed, awk, bash scripting, Python scripting for os, customizing environment |
-| Feb. 19,21 | Managing Projects | building code, git, cmake |
-| Feb. 26,28 | Scientific Python | numpy, scipy | 
-| Mar. 5,7   | Scientific Python | matplotlib, LaTeX integration |
-| Mar. 12,14 | Spring Break | N/A |
-| Mar. 19,21 | Scientific Python | Calling other languages from Python, cffi, SWIG |
-| Mar. 26,28 | Parallel Programming | MPI, cluster job submission |
-| Apr. 2,4   | Parallel Programming | MPI, PyTrilinos |
-| Apr. 9,11  | Parallel Programming | PyTrilinos |
-| Apr. 16,18 | Parallel Programming | PyTrilinos |
-| Apr. 23,26 | Parallel Programming | IPython, Jupyter notebook |
-| Apr. 30,May 2 | Parallel Programming | GPGPU, PyCuda |</p>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Topic</th>
+<th>Specifics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jan. 17</td>
+<td>Introduction to HPC and UNIX</td>
+<td>Syllabus, Codecademy, Github, Cloud9</td>
+</tr>
+<tr>
+<td>Jan. 22,24</td>
+<td>Git and Github</td>
+<td></td>
+</tr>
+<tr>
+<td>Jan. 29, 31</td>
+<td>Introduction to UNIX</td>
+<td>File system, permissions, regular expressions</td>
+</tr>
+<tr>
+<td>Feb. 5,7</td>
+<td>Editors</td>
+<td>vi, emacs</td>
+</tr>
+<tr>
+<td>Feb. 12,14</td>
+<td>Intermediate UNIX</td>
+<td>grep, sed, awk, bash scripting, Python scripting for os, customizing environment</td>
+</tr>
+<tr>
+<td>Feb. 19,21</td>
+<td>Managing Projects</td>
+<td>building code, git, cmake</td>
+</tr>
+<tr>
+<td>Feb. 26,28</td>
+<td>Scientific Python</td>
+<td>numpy, scipy</td>
+</tr>
+<tr>
+<td>Mar. 5,7</td>
+<td>Scientific Python</td>
+<td>matplotlib, LaTeX integration</td>
+</tr>
+<tr>
+<td>Mar. 12,14</td>
+<td>Spring Break</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Mar. 19,21</td>
+<td>Scientific Python</td>
+<td>Calling other languages from Python, cffi, SWIG</td>
+</tr>
+<tr>
+<td>Mar. 26,28</td>
+<td>Parallel Programming</td>
+<td>MPI, cluster job submission</td>
+</tr>
+<tr>
+<td>Apr. 2,4</td>
+<td>Parallel Programming</td>
+<td>MPI, PyTrilinos</td>
+</tr>
+<tr>
+<td>Apr. 9,11</td>
+<td>Parallel Programming</td>
+<td>PyTrilinos</td>
+</tr>
+<tr>
+<td>Apr. 16,18</td>
+<td>Parallel Programming</td>
+<td>PyTrilinos</td>
+</tr>
+<tr>
+<td>Apr. 23,26</td>
+<td>Parallel Programming</td>
+<td>IPython, Jupyter notebook</td>
+</tr>
+<tr>
+<td>Apr. 30,May 2</td>
+<td>Parallel Programming</td>
+<td>GPGPU, PyCuda</td>
+</tr>
+</tbody>
+</table>
 <p>Additional topics if time allows: Other scientific languages: C/C++</p>
 <p><strong>Grading:</strong></p>
 <ul>
@@ -146,18 +219,56 @@ article: http://ogp.me/ns/article#
 </li>
 </ul>
 <p><strong>Grade Assignment</strong></p>
-<p>|Range|Grade|
-|-|-|
-|&gt;92| A  |
-|90-92| A-  |
-|88-90| B+  |
-|82-88| B  |
-|80-82| B-  |
-|78-80| C+  |
-|72-78| C  |
-|70-72| C-  |
-|60-70| D  |
-|&lt; 60| F  |  </p>
+<table>
+<thead>
+<tr>
+<th>Range</th>
+<th>Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt;92</td>
+<td>A</td>
+</tr>
+<tr>
+<td>90-92</td>
+<td>A-</td>
+</tr>
+<tr>
+<td>88-90</td>
+<td>B+</td>
+</tr>
+<tr>
+<td>82-88</td>
+<td>B</td>
+</tr>
+<tr>
+<td>80-82</td>
+<td>B-</td>
+</tr>
+<tr>
+<td>78-80</td>
+<td>C+</td>
+</tr>
+<tr>
+<td>72-78</td>
+<td>C</td>
+</tr>
+<tr>
+<td>70-72</td>
+<td>C-</td>
+</tr>
+<tr>
+<td>60-70</td>
+<td>D</td>
+</tr>
+<tr>
+<td>&lt; 60</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Disability Statement:</strong> The University of Austin provides upon request appropriate academic accommodations for qualified students with disabilities. For more information, contact the Office of the Dean of Students at 512-471-6259 or see https://www.utexas.edu/diversity/ddce/ssd/ for more information.</p>
 </div>
     </div>
@@ -166,7 +277,7 @@ article: http://ogp.me/ns/article#
         <!--End of body content-->
 
         <footer>
-            Contents © 2018         <a href="mailto:jfoster@austin.utexas.edu">John T. Foster</a>     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a>
+            Contents © 2018         <a href="mailto:john.foster@utexas.edu">John T. Foster</a>     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png"></a>
             
         </footer>
     </div>
